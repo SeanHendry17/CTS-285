@@ -1,0 +1,26 @@
+DataMan – Check an Answer
+Your name: 
+Problem: 7 × 8
+Try 1 of 2
+Your answer: Correct!
+
+Problem: 9 × 4
+Try 1 of 2
+Your answer: EEE · Not quite. Try again.
+Try 2 of 2
+Your answer: Please enter a whole number. (This did not use a try.)
+Your answer: Correct!
+
+Problem: 12 ÷ 3
+Try 1 of 2
+Your answer: EEE · Not quite. Try again.
+Try 2 of 2
+Your answer: EEE · Out of tries. The answer is 4.
+
+--- Results for Maya ---
+7 × 8    try 1: 56   correct
+9 × 4    try 1: 30   wrong
+9 × 4    try 2: 36   correct
+12 ÷ 3   try 1: 1    wrong
+12 ÷ 3   try 2: 2    wrong
+Problems missed at least once: 9 × 4, 12 ÷ 3
