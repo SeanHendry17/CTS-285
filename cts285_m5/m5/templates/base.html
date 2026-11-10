@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DataMan – Answer Flow</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 32rem; margin: 2rem auto; padding: 0 1rem; }
+    .panel { background: #17202a; color: #e8eef4; font-family: monospace; padding: 1rem; border-radius: 6px; }
+    .flash { background: #fdecea; padding: .5rem; border-radius: 4px; }
+    input, button { font-size: 1rem; padding: .4rem .6rem; }
+    table { border-collapse: collapse; } td, th { border: 1px solid #ccc; padding: .3rem .6rem; }
+  </style>
+</head>
+<body>
+  {% for msg in get_flashed_messages() %}<p class="flash">{{ msg }}</p>{% endfor %}
+  {% block content %}{% endblock %}
+</body>
+</html>

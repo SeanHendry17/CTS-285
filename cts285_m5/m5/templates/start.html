@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>DataMan Practice</h1>
+<form method="post" action="{{ url_for('create_session') }}">
+  <label for="learner">Your name</label>
+  <input id="learner" name="learner" required>
+  <button type="submit">Start</button>
+</form>
+{% endblock %}

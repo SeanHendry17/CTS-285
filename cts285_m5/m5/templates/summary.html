@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Results for {{ learner }}</h1>
+<h2>Missed problems</h2>
+{% if missed %}<ul>{% for p in missed %}<li>{{ p.prompt }} (answer {{ p.answer }})</li>{% endfor %}</ul>
+{% else %}<p>None.</p>{% endif %}
+<h2>All attempts</h2>
+<table>
+  <tr><th>Problem</th><th>Try</th><th>Answer given</th><th>Correct?</th></tr>
+  {% for a in attempts %}
+  <tr><td>{{ problems[a.problem_id].prompt }}</td><td>{{ a.try_number }}</td><td>{{ a.submitted }}</td><td>{{ "Yes" if a.correct else "No" }}</td></tr>
+  {% endfor %}
+</table>
+<p><a href="{{ url_for('start') }}">Start over</a></p>
+{% endblock %}
